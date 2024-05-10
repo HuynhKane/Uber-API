@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/uber_api?useSSL=false
+    username: root
+    password: 290103
+
+
+
+#JPA Settings
+  jpa.hibernate.ddl_auto: create
+
+
+
+
+
