@@ -32,14 +32,14 @@ public class DriverController {
     {
         return iDriverService.getAllDrivers();
     }
-    @PostMapping("/")
+    @PostMapping("/add")
     public String createDriverDetails(@RequestBody Driver driver)
     {
         iDriverService.createDriver(driver);
         return "Driver Created Successfully";
     }
 
-    @PutMapping("/")
+    @PutMapping("/update")
     public String updateDriverDetails(@RequestBody Driver driver)
     {
         iDriverService.updateDriver(driver);
