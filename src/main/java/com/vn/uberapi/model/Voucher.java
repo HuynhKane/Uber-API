@@ -1,5 +1,6 @@
 package com.vn.uberapi.model;
 
+
 import jakarta.persistence.*;
 
 import java.sql.Timestamp;
@@ -67,4 +68,5 @@ public class Voucher {
     public void setQuantity(String quantity) {
         this.quantity = quantity;
     }
+
 }
