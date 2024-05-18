@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/uber_api?useSSL=false
     username: root
-    password: trinhthuphuong
+    password: ${SPRING_DATASOURCE_PASSWORD}
 
 
 
