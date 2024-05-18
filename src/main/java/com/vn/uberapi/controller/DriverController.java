@@ -24,7 +24,7 @@ public class DriverController {
     @GetMapping("/{driverId}")
     public ResponseEntity<Object> getDriverDetails(@PathVariable("driverId") String driverId)
     {
-        return ResponseHandler.responseBuilder("Requested Vendor Details are given here",
+        return ResponseHandler.responseBuilder("Requested Driver Details are given here",
                 HttpStatus.OK, iDriverService.getDriver(driverId));
     }
     @GetMapping("/all")

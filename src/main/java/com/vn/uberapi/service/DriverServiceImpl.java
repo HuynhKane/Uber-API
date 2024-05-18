@@ -3,12 +3,15 @@ package com.vn.uberapi.service;
 import com.vn.uberapi.exception.DriverNotFoundException;
 import com.vn.uberapi.model.Driver;
 import com.vn.uberapi.repository.DriverRepos;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 @Service
 public class DriverServiceImpl implements IDriverService{
 
+
+    @Autowired
     DriverRepos driverRepos;
 
     public DriverServiceImpl(DriverRepos driverRepos) {

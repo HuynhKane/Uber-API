@@ -12,5 +12,4 @@ public interface IDriverService {
     public Driver getDriver(String driverId);
     public List<Driver> getAllDrivers();
     public List<Driver> getByDriverName(String driverName);
-
 }

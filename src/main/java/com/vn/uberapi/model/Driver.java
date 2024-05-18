@@ -1,8 +1,6 @@
 package com.vn.uberapi.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name="driver")
@@ -15,8 +13,9 @@ public class Driver {
     private String driverPhone;
     private String driverIdVehicle;
 
-    public Driver(String accountId, String driverName, String driverID, String driverPhone, String driverIdVehicle) {
-        this.accountId = accountId;
+    public Driver( String accountId, String driverName, String driverID, String driverPhone, String driverIdVehicle) {
+        super();
+        this.accountId  = accountId;
         this.driverName = driverName;
         this.driverID = driverID;
         this.driverPhone = driverPhone;
@@ -24,6 +23,13 @@ public class Driver {
     }
 
     public Driver() {
+    }
+
+    public Driver(String driverName, String driverID, String driverPhone, String driverIdVehicle) {
+        this.driverName = driverName;
+        this.driverID = driverID;
+        this.driverPhone = driverPhone;
+        this.driverIdVehicle = driverIdVehicle;
     }
 
     public String getAccountId() {
