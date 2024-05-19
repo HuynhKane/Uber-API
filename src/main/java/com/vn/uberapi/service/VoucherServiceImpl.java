@@ -33,7 +33,7 @@ public class VoucherServiceImpl implements IVoucherService {
 
     @Override
     public String addVoucher(Voucher voucher) {
-        if (voucher.getExpires().before(Timestamp.from(Instant.now()))) {
+        if (voucher.getThoiGian().before(Timestamp.from(Instant.now()))) {
             return "Voucher expiration date is before the current date.";
         }
         else {
