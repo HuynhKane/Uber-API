@@ -7,5 +7,5 @@ import java.util.List;
 
 
 public interface DriverRepos extends JpaRepository<Driver, String> {
-    List<Driver> findByDriverName(String driverName);
+    List<Driver> findByTen(String ten);
 }

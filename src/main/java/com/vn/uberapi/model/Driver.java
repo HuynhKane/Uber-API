@@ -7,68 +7,84 @@ import jakarta.persistence.*;
 public class Driver {
 
     @Id
-    private String accountId;
-    private String driverName;
-    private String driverID;
-    private String driverPhone;
-    private String driverIdVehicle;
+    private String idTaiKhoan;
+    private String ten;
+    private String cccd;
+    private String sdt;
+    private String idXe;
+    private String urlAva;
 
-    public Driver( String accountId, String driverName, String driverID, String driverPhone, String driverIdVehicle) {
-        super();
-        this.accountId  = accountId;
-        this.driverName = driverName;
-        this.driverID = driverID;
-        this.driverPhone = driverPhone;
-        this.driverIdVehicle = driverIdVehicle;
+    public Driver(String ten, String urlAva) {
+        this.ten = ten;
+        this.urlAva = urlAva;
+    }
+
+    public Driver(String ten, String cccd, String sdt, String idXe, String urlAva) {
+        this.ten = ten;
+        this.cccd = cccd;
+        this.sdt = sdt;
+        this.idXe = idXe;
+        this.urlAva = urlAva;
+    }
+
+    public Driver(String idTaiKhoan, String ten, String cccd, String sdt, String idXe, String urlAva) {
+        this.idTaiKhoan = idTaiKhoan;
+        this.ten = ten;
+        this.cccd = cccd;
+        this.sdt = sdt;
+        this.idXe = idXe;
+        this.urlAva = urlAva;
     }
 
     public Driver() {
+
     }
 
-    public Driver(String driverName, String driverID, String driverPhone, String driverIdVehicle) {
-        this.driverName = driverName;
-        this.driverID = driverID;
-        this.driverPhone = driverPhone;
-        this.driverIdVehicle = driverIdVehicle;
+    public String getIdTaiKhoan() {
+        return idTaiKhoan;
     }
 
-    public String getAccountId() {
-        return accountId;
+    public void setIdTaiKhoan(String idTaiKhoan) {
+        this.idTaiKhoan = idTaiKhoan;
     }
 
-    public void setAccountId(String accountId) {
-        this.accountId = accountId;
+    public String getTen() {
+        return ten;
     }
 
-    public String getDriverName() {
-        return driverName;
+    public void setTen(String ten) {
+        this.ten = ten;
     }
 
-    public void setDriverName(String driverName) {
-        this.driverName = driverName;
+    public String getCccd() {
+        return cccd;
     }
 
-    public String getDriverID() {
-        return driverID;
+    public void setCccd(String cccd) {
+        this.cccd = cccd;
     }
 
-    public void setDriverID(String driverID) {
-        this.driverID = driverID;
+    public String getSdt() {
+        return sdt;
     }
 
-    public String getDriverPhone() {
-        return driverPhone;
+    public void setSdt(String sdt) {
+        this.sdt = sdt;
     }
 
-    public void setDriverPhone(String driverPhone) {
-        this.driverPhone = driverPhone;
+    public String getIdXe() {
+        return idXe;
     }
 
-    public String getDriverIdVehicle() {
-        return driverIdVehicle;
+    public void setIdXe(String idXe) {
+        this.idXe = idXe;
     }
 
-    public void setDriverIdVehicle(String driverIdVehicle) {
-        this.driverIdVehicle = driverIdVehicle;
+    public String getUrlAva() {
+        return urlAva;
+    }
+
+    public void setUrlAva(String urlAva) {
+        this.urlAva = urlAva;
     }
 }

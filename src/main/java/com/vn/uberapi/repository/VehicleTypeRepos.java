@@ -7,5 +7,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface VehicleTypeRepos extends JpaRepository<VehicleType, String> {
-    List<VehicleType> findByVehicleName(String vehicleName);
+    List<VehicleType> findByTenLoaiXe(String tenLoaiXe);
 }

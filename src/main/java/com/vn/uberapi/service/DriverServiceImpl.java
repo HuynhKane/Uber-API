@@ -49,6 +49,6 @@ public class DriverServiceImpl implements IDriverService{
 
     @Override
     public List<Driver> getByDriverName(String driverName) {
-        return driverRepos.findByDriverName(driverName);
+        return driverRepos.findByTen(driverName);
     }
 }

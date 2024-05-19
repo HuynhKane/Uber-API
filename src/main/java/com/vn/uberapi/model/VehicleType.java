@@ -9,40 +9,46 @@ import jakarta.persistence.Table;
 public class VehicleType {
 
     @Id
-    private String vehicleTypeId;
-    private String vehicleName;
-    private String vehiclePrice;
+    private String idLoaiXe;
+    private String tenLoaiXe;
+    private String gia;
+
+    public VehicleType(String tenLoaiXe, String gia) {
+        this.tenLoaiXe = tenLoaiXe;
+        this.gia = gia;
+    }
+
+    public VehicleType(String idLoaiXe, String tenLoaiXe, String gia) {
+        this.idLoaiXe = idLoaiXe;
+        this.tenLoaiXe = tenLoaiXe;
+        this.gia = gia;
+    }
 
     public VehicleType() {
+
     }
 
-    public VehicleType(String vehicleTypeId, String vehicleName, String vehiclePrice) {
-        this.vehicleTypeId = vehicleTypeId;
-        this.vehicleName = vehicleName;
-        this.vehiclePrice = vehiclePrice;
+    public String getIdLoaiXe() {
+        return idLoaiXe;
     }
 
-    public String getVehicleTypeId() {
-        return vehicleTypeId;
+    public void setIdLoaiXe(String idLoaiXe) {
+        this.idLoaiXe = idLoaiXe;
     }
 
-    public void setVehicleTypeId(String vehicleTypeId) {
-        this.vehicleTypeId = vehicleTypeId;
+    public String getTenLoaiXe() {
+        return tenLoaiXe;
     }
 
-    public String getVehicleName() {
-        return vehicleName;
+    public void setTenLoaiXe(String tenLoaiXe) {
+        this.tenLoaiXe = tenLoaiXe;
     }
 
-    public void setVehicleName(String vehicleName) {
-        this.vehicleName = vehicleName;
+    public String getGia() {
+        return gia;
     }
 
-    public String getVehiclePrice() {
-        return vehiclePrice;
-    }
-
-    public void setVehiclePrice(String vehiclePrice) {
-        this.vehiclePrice = vehiclePrice;
+    public void setGia(String gia) {
+        this.gia = gia;
     }
 }

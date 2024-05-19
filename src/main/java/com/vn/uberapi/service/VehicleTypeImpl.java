@@ -51,6 +51,6 @@ public class VehicleTypeImpl implements IVehicleType{
 
     @Override
     public List<VehicleType> getByVehicleName(String vehicleName) {
-        return vehicleTypeRepos.findByVehicleName(vehicleName);
+        return vehicleTypeRepos.findByTenLoaiXe(vehicleName);
     }
 }
